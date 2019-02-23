@@ -31,7 +31,6 @@ return accumulator+currentValue
 },0)
 
 return totalPrice   
-console.log(total())
             } 
 
 }

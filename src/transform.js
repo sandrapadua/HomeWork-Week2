@@ -4,9 +4,7 @@ const people = [{name: "Anna", age: 31}, {name: "John", age: 32}, {name: "Hank",
 function groupAdultsByAgeRange(people){
 let result ={}
 
-// if(people.length !== 0 ){
-//     result = people
-// }
+
 
 const ageLessThan20 = people.filter((person) => {
    return person.age>=18 && person.age <=20})
@@ -29,14 +27,10 @@ if(ageBetween31To40.length !==0){
 
 const ageBetween41To50 = people.filter((person)=>{
     return person.age > 40 && person.age <= 50})
-    console.log("AGE", ageBetween41To50)
 if(ageBetween41To50.length !==0){
     result['41-50'] = ageBetween41To50
 }
 
-
-
-console.log(result)
 
 const ageOlderThan51 = people.filter((person)=>{
     return person.age > 50})
@@ -47,7 +41,6 @@ if(ageOlderThan51.length !==0 ){
 return result
 }
 
-console.log(groupAdultsByAgeRange(people))
 
 
 module.exports = {groupAdultsByAgeRange}
